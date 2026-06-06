@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Form Agree</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <h1>Form Agree</h1>
+
+    <label for="label">Option to select</label>
+    <select id="label">
+      <option value="Agree" selected>Agree</option>
+      <option value="Strongly agree">Strongly agree</option>
+      <option value="Uncertain">Uncertain</option>
+      <option value="Disagree">Disagree</option>
+      <option value="Strongly disagree">Strongly disagree</option>
+      <option value="__custom__">Custom…</option>
+    </select>
+    <input
+      id="custom"
+      type="text"
+      placeholder="Custom option text"
+      autocomplete="off"
+      hidden
+    />
+
+    <div class="actions">
+      <button id="fill" class="primary">Fill this page</button>
+      <button id="fillNext">Fill &amp; Next</button>
+      <button id="fillSubmit" class="danger">Fill &amp; Submit</button>
+    </div>
+
+    <p id="status" class="status"></p>
+
+    <p class="note">
+      Open a Google Form tab, then click a button above. Submit is irreversible —
+      use only when you're sure.
+    </p>
+  </body>
+  <script src="popup.js"></script>
+</html>

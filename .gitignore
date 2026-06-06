@@ -1,0 +1,19 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Python (icon generator)
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Build artifacts
+*.zip
+*.crx
+*.pem
+
+# Node (in case anyone adds tooling later)
+node_modules/

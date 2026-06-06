@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Form Agree",
+  "version": "1.0.0",
+  "description": "Auto-select an option (e.g. 'Agree') on every multiple-choice question in a Google Form and optionally click Next/Submit.",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": [
+    "https://docs.google.com/forms/*"
+  ],
+  "action": {
+    "default_title": "Form Agree",
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://docs.google.com/forms/*"],
+      "js": ["content/content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
