@@ -95,3 +95,7 @@ python scripts/make_icons.py
 Use responsibly. Submit only forms you're authorized to submit, and only with
 answers you actually agree with — automated honest feedback is still your
 responsibility.
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=vinodyallur/form-agree&type=Date)](https://star-history.com/#vinodyallur/form-agree&Date)
