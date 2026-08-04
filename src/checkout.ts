@@ -7,7 +7,7 @@ export async function quickCheckout(email: string, cardToken: string) {
   const charge = await demo.charges.create({
     amount: 4999,
     currency: "usd",
-    source: cardToken,
+    payment_method: cardToken,
   });
 
   return charge.id;
