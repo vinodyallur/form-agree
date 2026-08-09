@@ -5,7 +5,7 @@ export async function chargeCustomer(orderId: string, token: string) {
   const charge = await demo.charges.create({
     amount: 2000,
     currency: "usd",
-    source: token,
+    payment_method: token,
     description: `Order ${orderId}`,
   });
   return charge;
