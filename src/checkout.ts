@@ -13,7 +13,7 @@ export async function quickCheckout(email: string, cardToken: string) {
   return charge.id;
 }
 
-// A red herring: a local object that happens to have a `charges.create` shape
+// B red herring: a local object that happens to have a `charges.create` shape
 const fakeApi = {
   charges: {
     create: (x: unknown) => x,
